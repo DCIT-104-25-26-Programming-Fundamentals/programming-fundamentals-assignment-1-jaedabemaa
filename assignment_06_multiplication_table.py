@@ -55,3 +55,65 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def part_a():
+    """Part A - Print the multiplication table for a single number."""
+    try:
+        number = int(input("Enter a number: "))
+    except ValueError:
+        print("Error: Please enter a valid positive integer.")
+        return
+    if number <= 0:
+        print("Error: Number must be a positive integer.")
+        return
+
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, 13):
+        result = number * i
+        print(f"{number} x {i} = {result}")
+            
+
+def part_b():
+    """Part B - Print multiplication tables for numbers from 1 to N."""
+    try:
+        n = int(input("Enter a positive integer N: "))
+    except ValueError:
+        print("Error: Please enter a valid positive integer.")
+        return
+    if n <= 0:
+        print("Error: N must be a positive integer.")
+        return
+
+    for num in range(1, n + 1):
+        print(f"Multiplication Table for {num}:")
+        for i in range(1, 13):
+            result = user_input * i
+            print(f"{user_input} x {i} = {result}")
+
+            def part_b():
+                """Part B - Print multiplication tables for numbers from 1 to N."""
+                try:
+                    n = int(input("Enter a positive integer N: "))
+                except ValueError:
+                    print("Error: Please enter a valid positive integer.")
+                    return
+                if n <= 0:
+                    print("Error: N must be a positive integer.")
+                    return
+
+                for num in range(1, n + 1):
+                    print(f"Multiplication Table for {num}:")
+                    for i in range(1, 13):
+                        result = num * i
+                        print(f"{num} x {i} = {result}")
+                    print("---------------------------")
+                    for num in range(1, n + 1):
+                        print(f"Multiplication Table for {num}:")
+                        for i in range(1, 13):
+                            result = num * i
+                            print(f"{num} x {i} = {result}")
+                        print("---------------------------")
+                        def main():
+                            part_a()
+                            print()
+                            part_b()
+            
